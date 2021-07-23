@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "website_s3_bucket" {
-  source      = "./modules/s3"
+  source      = "app.terraform.io/hashicorp_learn-self/My-Modules/aws"
   bucket_name = var.bucket_name
   prefix = var.prefix
   region = var.region 
